@@ -9,32 +9,17 @@
 
 ## 快速开始
 
-### 方式一：克隆仓库本地使用
-
 ```bash
 # 克隆项目
 git clone https://github.com/zhouhaoGG/tauri_windows_packer.git
 cd tauri_windows_packer
 
 # 直接运行
-node index.js --dist ./dist --name "MyApp"
+node index.js --dist <你的 dist 目录> --name "MyApp"
 
-# 或建立全局链接后使用
+# 或者建立全局链接，之后可在任意目录使用 tauri-pack 命令
 npm link
-tauri-pack --dist ./dist --name "MyApp"
-```
-
-### 方式二：npx 直接使用（无需克隆）
-
-```bash
-npx tauri-packer-cli --dist ./dist --name "MyApp"
-```
-
-### 方式三：全局安装
-
-```bash
-npm install -g tauri-packer-cli
-tauri-pack --dist ./dist --name "MyApp"
+tauri-pack --dist <你的 dist 目录> --name "MyApp"
 ```
 
 ## 参数
@@ -57,10 +42,10 @@ tauri-pack --dist ./dist --name "MyApp"
 
 ```bash
 # 基本用法
-npx tauri-packer-cli -d ./dist -n "MyApp" -o ./MyApp.exe
+node index.js -d ./dist -n "MyApp" -o ./MyApp.exe
 
 # 完整参数
-npx tauri-packer-cli \
+node index.js \
   --dist ./dist \
   --name "MyApp" \
   --title "我的应用" \
@@ -72,10 +57,10 @@ npx tauri-packer-cli \
   --output ./MyApp.exe
 
 # 小窗口工具
-npx tauri-packer-cli -d ./dist -n "小工具" -t "实用工具" -w 400 -H 300
+node index.js -d ./dist -n "小工具" -t "实用工具" -w 400 -H 300
 
 # 调试模式 — 保留构建目录查看详情
-npx tauri-packer-cli -d ./dist --keep-temp
+node index.js -d ./dist --keep-temp
 ```
 
 ## 原理
