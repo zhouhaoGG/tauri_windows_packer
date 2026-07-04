@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Rust / Cargo
+target/
+
+# Tauri
+src-tauri/target/
+src-tauri/gen/
+
+# 构建输出
+output/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

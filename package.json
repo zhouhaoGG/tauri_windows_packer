@@ -1,0 +1,26 @@
+{
+  "name": "tauri-packer-cli",
+  "version": "1.0.0",
+  "description": "一键将任意 dist 目录打包为 Tauri Windows x64 exe",
+  "main": "index.js",
+  "bin": {
+    "tauri-pack": "./index.js",
+    "tauri-packer-cli": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "templates/"
+  ],
+  "keywords": [
+    "tauri",
+    "packer",
+    "exe",
+    "windows",
+    "cli",
+    "打包"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
