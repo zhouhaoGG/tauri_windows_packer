@@ -9,11 +9,30 @@
 
 ## 快速开始
 
-```bash
-# 直接使用 npx（无需安装）
-npx tauri-packer-cli --dist ./dist
+### 方式一：克隆仓库本地使用
 
-# 或全局安装后使用
+```bash
+# 克隆项目
+git clone https://github.com/zhouhaoGG/tauri_windows_packer.git
+cd tauri_windows_packer
+
+# 直接运行
+node index.js --dist ./dist --name "MyApp"
+
+# 或建立全局链接后使用
+npm link
+tauri-pack --dist ./dist --name "MyApp"
+```
+
+### 方式二：npx 直接使用（无需克隆）
+
+```bash
+npx tauri-packer-cli --dist ./dist --name "MyApp"
+```
+
+### 方式三：全局安装
+
+```bash
 npm install -g tauri-packer-cli
 tauri-pack --dist ./dist --name "MyApp"
 ```
